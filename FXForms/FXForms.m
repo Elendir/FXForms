@@ -90,8 +90,8 @@ static NSString *const FXFormsException = @"FXFormsException";
 
 
 static const CGFloat FXFormFieldLabelSpacing = 5;
-static const CGFloat FXFormFieldMinLabelWidth = 97;
-static const CGFloat FXFormFieldMaxLabelWidth = 240;
+static const CGFloat FXFormFieldMinLabelWidth = 0;
+static const CGFloat FXFormFieldMaxLabelWidth = 0;
 static const CGFloat FXFormFieldMinFontSize = 12;
 static const CGFloat FXFormFieldPaddingLeft = 10;
 static const CGFloat FXFormFieldPaddingRight = 10;
@@ -2979,7 +2979,7 @@ static void FXFormPreprocessFieldDictionary(NSMutableDictionary *dictionary)
 
 - (void)textFieldDidBeginEditing:(__unused UITextField *)textField
 {
-    [self.textField selectAll:nil];
+    //[self.textField selectAll:nil];
 }
 
 - (void)textDidChange
@@ -3171,7 +3171,7 @@ static void FXFormPreprocessFieldDictionary(NSMutableDictionary *dictionary)
 
 - (void)textViewDidBeginEditing:(__unused UITextView *)textView
 {
-    [self.textView selectAll:nil];
+    //[self.textView selectAll:nil];
 }
 
 - (void)textViewDidChange:(UITextView *)textView
